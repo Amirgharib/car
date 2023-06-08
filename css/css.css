@@ -1,0 +1,260 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+body{
+    background: rgb(53, 52, 52);
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+padding: .5vw;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    z-index: 100;
+
+}
+.head h2{
+    text-transform: capitalize;
+}
+.head h2::first-letter{
+font-size: 2.5vw;
+color: red;
+}
+
+.head nav ul{
+display: flex;
+gap: 1vw;
+justify-content: center;
+align-items: center;
+}
+.head nav ul a{
+    padding: 10px;
+    text-transform: capitalize;
+}
+.head nav ul a:hover,.home{
+    background-color: red;
+    border-radius: 6px;
+    transition: .5s;
+}
+
+.head button{
+    padding: 8px;
+    margin-right:5px ;
+    background-color: red;
+    border-radius: 8px;
+    text-transform: capitalize;
+    font-size: 1.2vw;
+    border-color: transparent;
+
+}
+.head button:hover{
+    transform: scale(1.2);
+    transition: .3s;
+    cursor:pointer;
+}
+
+.body0{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 10vw;
+    width: 100%;
+}
+
+.body0 .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+    padding: 0 6vw;
+    width: 29%;
+}
+.body0 .left h2{
+    font-family: monospace;
+    font-size: 3vw;
+    text-transform: capitalize;
+
+}
+.body0 .left h2::first-letter{
+    color: red;
+    font-size: 3.5vw;
+}
+.body0 .left button{
+    border-color: transparent;
+    background-color: red;
+    width: 8vw;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 .5vw;
+}
+.body0 .left button:hover{
+    transform: scale(1.3);
+    transition: .3s;
+    cursor: pointer;
+}
+.body0 .right{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 3vw;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: -6px 2px 7px 6px rgba(19, 19, 19, 0.518);
+}
+
+
+.body0 img{
+    width: 60vw;
+    transform: translate(-2vw, 0);
+}
+
+.body0 .right .bot .r{
+    z-index: 1;
+    position: absolute;
+    right: 12px;
+    width: 1vw;
+    height: 1vw;
+    transform: rotate(40deg);
+    border: 3px solid;
+    border-color:  wheat wheat transparent transparent;
+    background-color: transparent;
+}
+.body0 .right .bot .f{
+    z-index: 1;
+    position: absolute;
+    left: 12px;
+    width: 1vw;
+    height: 1vw;
+    transform: rotate(40deg);
+    border: 3px solid;
+    border-color: transparent transparent wheat wheat;
+    background-color: transparent;
+}
+.body0 .right .bot button{
+    cursor: pointer;
+}
+.body0 .right .bot .f:hover{
+border-color:  transparent transparent red red;
+transition: .1s;
+transform: scale(1.4) rotate(40deg);
+}
+.body0 .right .bot .r:hover{
+    border-color: red red  transparent transparent;
+    transition: .1s;
+    transform: scale(1.4) rotate(40deg);
+    }
+
+
+
+
+.body0 .right .bot .rclick{
+    z-index: 1;
+    position: absolute;
+    right: 12px;
+    width: 1vw;
+    height: 1vw;
+    transform: rotate(40deg);
+    border: 3px solid;
+    border-color:  wheat wheat transparent transparent;
+    background-color: transparent;
+}
+.body0 .right .bot .fclick{
+    z-index: 1;
+    position: absolute;
+    left: 12px;
+    width: 1vw;
+    height: 1vw;
+    transform: rotate(40deg);
+    border: 3px solid;
+    border-color: transparent transparent wheat wheat;
+    background-color: transparent;
+}
+.body0 .right .bot .rclick:hover{
+    border-color: red red  transparent transparent;
+    transition: .1s;
+    transform: scale(1.4) rotate(40deg);
+    }
+    .body0 .right .bot .fclick:hover{
+        border-color: transparent transparent  red red ;
+        transition: .1s;
+        transform: scale(1.4) rotate(40deg);
+        }
+
+
+        .body1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3vw;
+            margin:  20vw 0;
+            width: 100%;
+            position: relative;
+        
+        }
+        .body1 .tit{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            
+        }
+        .body1 .top ,.body1 .bott,.body1 .bott1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2vw;
+        }
+        .body1 .top div,.body1 .bott div,.body1 .bott1 div{
+            width: 19vw;
+            box-shadow: -6px 2px 7px 6px rgba(19, 19, 19, 0.518);
+            display: flex;
+            flex-direction: column;
+            padding: 1vw;
+            justify-content: center;
+            border-radius: 10px;
+            align-items: center;
+            gap: 1vw;
+            flex-wrap: wrap;
+
+        }
+        .body1 .top div:hover,.body1 .bott div:hover,.body1 .bott1 div:hover{
+background-color: #6e716e;
+transition: .5s;
+        }
+        .body1 img{
+            width: 10vw;
+            height: 5vw;
+        }
+.body1 .tit h2{
+    text-transform: capitalize;
+    color: rgb(231, 216, 216);
+    padding: .7vw;
+    background-color: rgb(171 154 154 / 15%);
+    border-radius: 13px;
+}
+.body1 .tit button{
+    background-color: red;
+    padding: .5vw;
+    border-color: transparent;
+    border-radius: 6px;
+    font-size: 1.2vw;
+    cursor: pointer;
+    
+}
+.body1 .tit button:hover{
+    background-color: rgb(243, 62, 62);
+    transform: scale(1.2);
+    transition: .5s;
+}
